@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aaron Z. Ward's GitHub.io</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaron Z. Ward | Technical Developer</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    header {
+      background: #161b22;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.25rem 0 0;
+      color: #8b949e;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    h2 {
+      color: #58a6ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This site is hosted on GitHub Pages.</p>
+  <header>
+    <h1>Aaron Z. Ward</h1>
+    <p>Developer • Security Enthusiast • Technical Consultant</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a technical developer and security practitioner with experience across
+        <strong>Rust</strong>, <strong>Python</strong>, <strong>ColdFusion</strong>,
+        and <strong>automation / SOAR platforms</strong>.  
+        My work often blends system integration, web development, and cybersecurity automation.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Recent Projects</h2>
+      <ul>
+        <li>
+          <strong>Command and Control Demo (Python):</strong>
+          A minimal server-agent system with persistent configuration and SQLite storage.
+        </li>
+        <li>
+          <strong>Rust Web Application:</strong>
+          Role-based authentication system with PostgreSQL backend and Apache deployment.
+        </li>
+        <li>
+          <strong>ColdFusion Portal (Lucee):</strong>
+          Lightweight user portal using SQLite and native CFML queries.
+        </li>
+      </ul>
+    </section>
+
+    <section id="learning">
+      <h2>Learning & Focus</h2>
+      <p>
+        Currently deepening my experience in <strong>Rust</strong> (system-level development),
+        refining web service architecture on <strong>Debian</strong>, and building practical
+        examples of secure automation systems.
+      </p>
+    </section>
+
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://github.com/hacksonabus" target="_blank">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/aaron-z-ward/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Aaron Z. Ward — Built with HTML & GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
